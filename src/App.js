@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './pages/Home/HomePage'
+import GithubOverview from './pages/GithubOverview/GitHubOverviewPage'
+import { motion } from 'framer-motion'
+import './App.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <motion.main className="App">
+      <Router>
+        <Switch>
+          <Route path="/:username" component={GithubOverview} />
+
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
+    </motion.main>
+  )
 }
 
-export default App;
+export default App
