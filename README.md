@@ -8,4 +8,8 @@
 
 Simply enter a Github username and get the results
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+**_Login Page_**
+![Login Page Image](https://github.com/agumusay/github-repositories/raw/master/src/Assets/images/login.png)
+
+**_Results Page_**
+![Results Page Image](https://github.com/agumusay/github-repositories/raw/master/src/Assets/images/repositories.png)
